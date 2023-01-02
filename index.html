@@ -1,77 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>laba2</title>
-	<style type="text/css">
-		img{
-			padding: 10px;
-			margin-left: 500px;
-		}
-		iframe{
-			padding: 10px;
-			margin-left: 500px;
-			margin-bottom: 100px;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lab_05_WT</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
-		<img src="grafika-1024x477" height="200px">
-	<ul>list of programming languages:
-		<li>Java</li>
-		<li>JavaScript</li>
-		<li>Python</li>
-		<li>C#</li>
-		<li>C++</li>
-	</ul>
-	<table border="1">
-		<tr>
-			<th>Структурні</th>
-			<th>Процедурні</th>
-			<th>Об'єктно-орієнтовані</th>
-		</tr>
-		<tr>
-			<td>Basic</td>
-			<td>PHP</td>
-			<td>Action Script</td>
-		</tr>
-		<tr>
-			<td>Cg</td>
-			<td>GNU bc</td>
-			<td>C++/CLI</td>
-		</tr>
-				<tr>
-			<td>JOVIAL</td>
-			<td>Euphoria</td>
-			<td>C#</td>
-		</tr>
-				<tr>
-			<td>Pascal</td>
-			<td>Limbo</td>
-			<td>ColdFusion</td>
-		</tr>
-				<tr>
-			<td>PL/M</td>
-			<td>Lua</td>
-			<td>D</td>
-		</tr>
-				<tr>
-			<td>QBASIC</td>
-			<td>Maple</td>
-			<td>Dart</td>
-		</tr>
-				<tr>
-			<td>REXX</td>
-			<td>MATLAB</td>
-			<td>Object Pascal</td>
-		</tr>
-				<tr>
-			<td>Shell</td>
-			<td>Occam</td>
-			<td>Dylan</td>
-		</tr>
-	</table>
-	<iframe width="560" center height="315" src="https://www.youtube.com/embed/2EaopRDxNrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<p id="demo">HTML</p>
+	<button type="button" onclick='document.getElementById("demo").innerHTML = "JavaScript"'>Click Me!</button>
+	<hr>
+	<p id="demo">JavaScript can change the style of an HTML element.</p>
+	<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+	<hr>
+	<button onclick="document.getElementById('myImage').src='lump1.jpg'">turn on</button>
+	<img id="myImage" src="lump1.jpg" style="width:100px">
+	<button onclick="document.getElementById('myImage').src='lump2.jpg'">turn off</button>
+	<hr>
+
+<div class="flexDiv">
+  <button class="sec_btn" onclick="openMulti();">⠀⠀⠀⠀⠀Menu⠀⠀⠀⠀⠀</button>
+  	<div class="selectWrapper">
+    <div class="multiSelect" id="menu-0">
+    <div class="bottomBorder">Home</div>
+    <div onclick="openMulti();">About</div>
+    <div onclick="openMulti();">Contact</div>
+    <div onclick="openMulti();">Blog</div>
 </body>
 </html>
